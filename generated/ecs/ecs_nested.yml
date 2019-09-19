@@ -4081,6 +4081,20 @@ tracing:
     of the requests - from the initial web request in the front-end service - to queries
     made through multiple back-end services.
   fields:
+    span.id:
+      description: 'Unique identifier of the span.
+
+        A span contains information about a specific code path that has been executed.
+        It measures from the start to end of any activity, and can have a parent/child
+        relationship with other spans.'
+      example: 262dfd8f283a905d
+      flat_name: span.id
+      ignore_above: 1024
+      level: extended
+      name: span.id
+      order: 2
+      short: Unique identifier of the span.
+      type: keyword
     trace.id:
       description: 'Unique identifier of the trace.
 

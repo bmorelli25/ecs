@@ -3626,6 +3626,20 @@ source.user.name:
   original_fieldset: user
   short: Short name or login of the user.
   type: keyword
+span.id:
+  description: 'Unique identifier of the span.
+
+    A span contains information about a specific code path that has been executed.
+    It measures from the start to end of any activity, and can have a parent/child
+    relationship with other spans.'
+  example: 262dfd8f283a905d
+  flat_name: span.id
+  ignore_above: 1024
+  level: extended
+  name: span.id
+  order: 2
+  short: Unique identifier of the span.
+  type: keyword
 tags:
   description: List of keywords used to tag each event.
   example: '["production", "env2"]'

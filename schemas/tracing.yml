@@ -28,3 +28,13 @@
         Unique identifier of the transaction.
         
         A transaction is the highest level of work measured within a service, such as a request to a server.
+    - name: span.id
+      level: extended
+      type: keyword
+      example: 262dfd8f283a905d
+      short: Unique identifier of the span.
+      description: >
+        Unique identifier of the span.
+        
+        A span contains information about a specific code path that has been executed.
+        It measures from the start to end of any activity, and can have a parent/child relationship with other spans.
